@@ -1,0 +1,28 @@
+# Rclone Python API Configuration File
+# This file contains settings for the rclone sync script
+
+# File paths and directories
+csv_file = "rclone_papi_folder_list.csv"
+log_folder = "log"
+
+# Rclone performance and reliability parameters
+user_check = true
+user_transfers = 10 #32
+user_checkers = 64
+user_multi_thread_streams = 8
+user_low_level_retries = 10
+user_retries = 5
+user_retries_sleep = "10s"
+user_timeout = "5m"
+user_max_backlog = 10000
+
+# Optional: Add comments for each parameter
+# user_check: Enable checking of transferred files
+# user_transfers: Number of parallel file transfers (default: 4)
+# user_checkers: Number of checkers to run in parallel (default: 8)
+# user_multi_thread_streams: Number of streams per file transfer (default: 4)
+# user_low_level_retries: Number of low level retries (default: 10)
+# user_retries: Number of retries on failure (default: 3)
+# user_retries_sleep: Sleep time between retries (default: 0s)
+# user_timeout: IO idle timeout (default: 5m0s)
+# user_max_backlog: Maximum number of objects in sync or check backlog (default: 10000)

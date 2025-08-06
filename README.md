@@ -17,4 +17,8 @@ target = backup folder
 - Purge folders on the target even if they contain many files.
 - List currently handled files by backup.
 
+
+
+Scripts were tested on Windows11 backuping up files to OneDrive personal and business
+
 Python scripts are using the rclone-api library https://pypi.org/project/rclone-api/
